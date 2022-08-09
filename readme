@@ -44,4 +44,16 @@ ele deixa explicito o type, source and target. o -v também cria o diretório ca
 23- docker rmi ubuntu (remove uma imagem)
 24- docker build -t jamessonjr/nginx-com-vim:latest . (constrói uma imagem nova baseado no Dockerfile que se encontra no mesmo diretório, -t é para definir o nome da imagem)
 25- docker run jamessonjr/nginx-com-vim echo oi (passando os parametros depois sobrescreve o comando do dockerfile)
+26- docker network ls (lista as networks)
+27- docker attach ubuntu1 (atacha o container entrando na bash dele)
+28- docker network create --driver bridge minharede (criando uma rede do tipo bridge)
+29- docker run -dit --name ubuntu1 --network minharede bash (criando um container definindo uma rede)
+30- docker network connect minharede ubuntu3 (conectando um container a uma network)
+31- 
 
+## Tipos de Network
+	- Bridge (ponte): normalmente utilizada para um container se conectar facilmente com outro
+	- Host: mescla a network do host com a network do container, ambos podem acessar um ao outro
+	- Overlay: Fazer com que containers de outras maquinas se comuniquem, ex: docker swarm
+	- Maclan: Fazer com que o container tenha uma mac e apareca na sua rede
+	- None: O container nao vai usar rede, vai rodar isolado
