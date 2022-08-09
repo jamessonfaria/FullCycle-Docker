@@ -8,4 +8,4 @@ WORKDIR /app
 RUN apt-get update && apt-get install vim -y
 
 # Realiza uma copia da pasta do computador para dentro do container
-COPY html /usr/share/nginx
+COPY html /usr/share/nginx/html
