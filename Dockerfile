@@ -1,6 +1,12 @@
 # A partir dessa imagem
 FROM nginx:latest
 
+# Executa um comando porem nao pode ser substituido por parametro
+ENTRYPOINT [ "echo",  "Hello"]
+
+# Executa um comando que pode ser substituido por parametro
+CMD [ "World" ]
+
 # Diretorio de trabalho dentro do container
 WORKDIR /app
 

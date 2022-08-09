@@ -42,6 +42,6 @@ ele deixa explicito o type, source and target. o -v também cria o diretório ca
 21- docker pull <image> (apenas baixa a imagem e não cria um container)
 22- docker images (verificas as imagens baixadas)
 23- docker rmi ubuntu (remove uma imagem)
-24- docker build -t jamessonjr/nginx-com-vim:latest . (constrói uma imagem nova baseado no Dockerfile que se encontra no mesmo diretório)
-25- 
+24- docker build -t jamessonjr/nginx-com-vim:latest . (constrói uma imagem nova baseado no Dockerfile que se encontra no mesmo diretório, -t é para definir o nome da imagem)
+25- docker run jamessonjr/nginx-com-vim echo oi (passando os parametros depois sobrescreve o comando do dockerfile)
 
