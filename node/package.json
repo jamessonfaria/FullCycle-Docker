@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "- Um container é um padrao de unidade de software que empacota código e todas as dependências de uma aplicação fazendo que a mesma seja executada rápidamente e de forma confiável",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamessonfaria/Docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamessonfaria/Docker/issues"
+  },
+  "homepage": "https://github.com/jamessonfaria/Docker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

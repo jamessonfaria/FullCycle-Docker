@@ -50,7 +50,7 @@ ele deixa explicito o type, source and target. o -v também cria o diretório ca
 29- docker run -dit --name ubuntu1 --network minharede bash (criando um container definindo uma rede)
 30- docker network connect minharede ubuntu3 (conectando um container a uma network)
 31- docker network inspect minharede (inspeciona os detalhes da rede)
-32- ss
+32- docker build -t jamessonjr/hello-express . -f Dockerfile.prod (docker build informando file Dockerfile)
 
 ## Tipos de Network
 	- Bridge (ponte): normalmente utilizada para um container se conectar facilmente com outro
