@@ -62,3 +62,7 @@ ele deixa explicito o type, source and target. o -v também cria o diretório ca
 ## Container acessando o host
 	- http://host.docker.internal:PORT ou
 	- http://gateway.docker.internal:PORT
+
+## Docker Compose
+	- docker-compose up (subir todos os containers do file docker-compose)
+	- docker-compose down (derrubart todos os containers do file docker-compose)
