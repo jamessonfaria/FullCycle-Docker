@@ -68,6 +68,12 @@ Obs.3: As imagens ficam armazenadas em um image registry
 ## Docker Compose
 	- docker-compose up (subir todos os containers do file docker-compose)
 	- docker-compose up -d (subir todos os containers do file docker-compose, -d detached não trava o console)
-	- docker-compose down (derrubart todos os containers do file docker-compose)
+	- docker-compose down (derrubar todos os containers do file docker-compose)
 	- docker-compose ps (containers do docker-compose que estao rodando)
 	- docker-compose up -d --build (subir todos os containers do file docker-compose, --build rebuid das imagens novamente) 
+	- docker-compose stop db (derruba um container especifico do docker compose)
+
+## Dockerize (https://github.com/jwilder/dockerize)
+	- Ajuda com a simplicacao da execucao de docker containers
+	- Permite realizar wait de outros containers, ajudando com a dependencia entre containers
+	ex: dockerize -wait tcp://db:3306 -timeout 5s 
