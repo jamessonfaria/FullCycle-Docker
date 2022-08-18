@@ -7,11 +7,11 @@
 	- Cgroups => Controla os recursos do container, evita que o container extrapole o uso de recursos
 	- OFS (Overlay File System) => Trabalhando com camadas, não precisa de copias inteiras do SO, as 		dependências são reutilizadas, por isso o container é leve
 	
-	> Obs.1: Os containers são imutáveis
-	> Obs.2: É criada uma camada no container de leitura/escrita
-	> Obs.3: As imagens ficam armazenadas em um image registry
+	> - Obs.1: Os containers são imutáveis
+	> - Obs.2: É criada uma camada no container de leitura/escrita
+	> - Obs.3: As imagens ficam armazenadas em um image registry
 
-	> * Arquitetura Docker Client(Containers, Run, Pull, Push...) 	->	Docker Host (Volumes, Network, Cache Image, Daemon API)	<- Registry (Images)
+	> - * Arquitetura Docker Client(Containers, Run, Pull, Push...) 	->	Docker Host (Volumes, Network, Cache Image, Daemon API)	<- Registry (Images)
 
 
 ## Comandos Docker
