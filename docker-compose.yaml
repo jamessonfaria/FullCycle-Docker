@@ -15,6 +15,18 @@ services:
     networks:
       - node-network
 
+  app:
+    build: 
+      context: node
+    container_name: app
+    networks:
+      - node-network
+    volumes:
+      - ./node:/usr/src/app
+    tty: true
+    ports:
+      - "3000:3000"
+
 networks:
   node-network:
     driver: bridge
