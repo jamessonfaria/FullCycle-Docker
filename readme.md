@@ -70,3 +70,4 @@ Obs.3: As imagens ficam armazenadas em um image registry
 	- docker-compose up -d (subir todos os containers do file docker-compose, -d detached não trava o console)
 	- docker-compose down (derrubart todos os containers do file docker-compose)
 	- docker-compose ps (containers do docker-compose que estao rodando)
+	- docker-compose up -d --build (subir todos os containers do file docker-compose, --build rebuid das imagens novamente) 
