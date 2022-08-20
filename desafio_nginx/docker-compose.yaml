@@ -41,7 +41,7 @@ services:
       dockerfile: Dockerfile
     image: jamessonjr/app-nodejs
     container_name: app-nodejs
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh index.js
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 60s docker-entrypoint.sh index.js
     networks:
       - desafio-network
     tty: true
