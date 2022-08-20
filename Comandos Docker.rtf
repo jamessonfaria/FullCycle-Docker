@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 ### Docker ###
+\f1\b0 \
+\
+### criar o container a partir de arquivo Dockerfile que informa a imagem, -t = apelido para o container\
+1- docker build -t meu_apache .\
+\
+### lista as imagens disponivel no docker local\
+2- docker image ls \
+\
+### executar a imagem criada, subindo assim uma instancia da image na porta 8080 local relacionando a porta 80 do apache no contaminar\
+3- docker run -p 8080:80 meu_apache\
+\
+\
+
+\f0\b ### Docker Compose (Multiples Containers) ###
+\f1\b0 \
+\
+### Criar e executa os containers -d = segundo plano, --build = for\'e7a recria\'e7\'e3o da imagem \
+1- docker-compose up -d --build\
+\
+### Acessar a console dos container, -it = manter a conex\'e3o aberta para podermos interagir\
+2- docker exec -it <container> bash\
+\
+### Push para o Docker Hub ###\
+\
+
+\f0\b ### Criar o repositorio no Docker Hub pela web ###
+\f1\b0 \
+1- Acessar o portal e criar o repositorio\
+\
+### Realizar o login no terminal\
+2- docker login\
+\
+### Definir uma tag do reposit\'f3rio com a sua imagem local \
+3- docker tag nome_imagem:latest jamessonjr/nome_repositorio:latest\
+\
+### Realizar o push da image para o hub do docker\
+4- docker push jamessonjr/nome_repositorio:latest\
+\
+### Caso queira baixar a imagem do hub docker\
+1- docker pull jamessonjr/nome_repositorio:latest\
+}
