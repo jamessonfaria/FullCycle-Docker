@@ -1,0 +1,1 @@
+USE nodedb; CREATE TABLE IF NOT EXISTS people (id VARCHAR(100), name VARCHAR(100));
